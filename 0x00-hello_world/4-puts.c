@@ -1,10 +1,10 @@
-#include <stdio.h>
+include <stdio.h>
 /**
+ * main - Prints out a string to stdout.
  *
- *main - Prints out a string to stdout.
- *Description: this prints out string
- *Return: 0 if success.
+ * Description: this prins out string
  *
+ * Return: 0 if success.
  */
 int main(void)
 {
