@@ -1,23 +1,23 @@
 #include "main.h"
 
 /**
- * main - Prints _putchar followed by a new line
+ * main - A program that prints _putchar
  *
- * Return: Always 0.
+ * Return: Always 0 (Success)
  */
 int main(void)
+
 {
-	
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar("c");
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
-	
+	int x; /*Declaration statement*/
+
+	char string[8] = "_putchar"; /*Arrays*/
+
+	for (x = 0; x < 8; x++) /*Starting for loop statement*/
+	{
+		_putchar(string[x]); /*Displaying word*/
+	} /*End of for loop statement*/
+
+	_putchar ('\n');
 
 	return (0);
 }
