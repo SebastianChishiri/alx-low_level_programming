@@ -1,19 +1,19 @@
-#include <stdio.h>
+#include "stdio.h"
 /**
- * main - Entry point
+ * main -entery point 
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char *sh = "_putchar";
+	char ch = '1';
 
-	while (*sh)
+	for (ch = '1'; ch <= '9'; ch++)
 	{
-		_putchar(*sh);
-		sh++;
+		putchar(ch);
+		ch++;
 	}
-	_putchar('\n');
+	 putchar('\n');
 
 	return (0);
 }
