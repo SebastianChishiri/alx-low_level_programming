@@ -1,24 +1,36 @@
 #include <stdio.h>
+
 /**
- * main - increasing and decreasing until 98
+ * main - Entry point
  *
- * Return: Always 0.
+ * Return: nothing, return void
  */
 
 int main(void)
 {
-	int x, result; /*Delcaring statements*/
+	/*Declaring statements*/
+	long int num;
+	long int num_1 = 0;
+	long int num_2 = 1;
+	long int nextTerm;
 
-	x = 0;
-	result = 0;
-	/*Start While*/
-	while (x < 1024)
+	for (num = 0; num < 50; ++num) /*Start for*/
 	{
-		if (x % 3 == 0 || x % 5 == 0) /*Start condition IF*/
-			result += x;
-		x++;
-	} /*END condition IF*/
+		nextTerm = num_1 + num_2;
+		num_1 = num_2;
+		num_2 = nextTerm;
 
-	printf("%d\n", result);
+		if (num != 49)
+		{
+			printf("%ld, ", nextTerm);
+		}
+
+		else
+		{
+			printf("%ld\n", nextTerm);
+		}
+
+	} /*End for*/
+
 	return (0);
 }
